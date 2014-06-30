@@ -157,11 +157,12 @@ static const int GRID_COLUMNS = 10;
 
     int numAlive = 0;
     Creature *_creature;
+    
     for (int i = 0; i < [_gridArray count]; i ++) {
         for (int j = 0; j < i; j ++) {
             if (j == 3) {
                 _creature.isAlive = YES;
-                numAlive ++; 
+                numAlive ++;
             } else {
                 if ([_gridArray count] <= 1 || [_gridArray count] >= 4) {
                     _creature.isAlive = NO;
