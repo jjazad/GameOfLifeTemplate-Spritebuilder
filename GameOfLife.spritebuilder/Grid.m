@@ -37,8 +37,7 @@ static const int GRID_COLUMNS = 10;
 
 
 - (void)setupGrid
-{
-        // divide the grid's size by the number of columns/rows to figure out the right width and height of each cell
+{ // divide the grid's size by the number of columns/rows to figure out the right width and height of each cell
     _cellWidth = self.contentSize.width / GRID_COLUMNS;
     _cellHeight = self.contentSize.height / GRID_ROWS;
 
@@ -64,7 +63,7 @@ static const int GRID_COLUMNS = 10;
             _gridArray[i][j] = creature;
 
                 // make creatures visible to test this method, remove this once we know we have filled the grid properly
-                // creature.isAlive = YES;
+            creature.isAlive = YES;
             
             x+=_cellWidth;
         }
@@ -72,7 +71,6 @@ static const int GRID_COLUMNS = 10;
         y += _cellHeight;
     }
 }
-
 
 
 - (void)touchBegan:(UITouch *)touch withEvent:(UIEvent *)event
