@@ -174,7 +174,7 @@ static const int GRID_COLUMNS = 10;
         }
     }
     _totalAlive = numAlive;
-    [self evolveStep];
+   
 }
 
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
