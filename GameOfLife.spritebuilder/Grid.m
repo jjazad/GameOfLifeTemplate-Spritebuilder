@@ -163,10 +163,12 @@ static const int GRID_COLUMNS = 10;
             if (j == 3) {
                 _creature.isAlive = YES;
                 numAlive ++;
+                [self evolveStep];
             } else {
                 if ([_gridArray count] <= 1 || [_gridArray count] >= 4) {
                     _creature.isAlive = NO;
                     _creature.visible = NO;
+                    [self evolveStep];
                 }
             }
         }
