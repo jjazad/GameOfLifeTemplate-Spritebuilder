@@ -163,18 +163,18 @@ static const int GRID_COLUMNS = 10;
             if (j == 3) {
                 _creature.isAlive = YES;
                 numAlive ++;
-
+                    NSLog(@"I made it to Yes");
             } else {
                 if ([_gridArray count] <= 1 || [_gridArray count] >= 4) {
                     _creature.isAlive = NO;
                     _creature.visible = NO;
-
+                    NSLog(@"I made it to No");
                 }
             }
         }
     }
     _totalAlive = numAlive;
-   
+
 }
 
 - (BOOL)isIndexValidForX:(int)x andY:(int)y
