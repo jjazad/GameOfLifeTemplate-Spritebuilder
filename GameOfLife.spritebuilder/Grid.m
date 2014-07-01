@@ -111,6 +111,7 @@ static const int GRID_COLUMNS = 10;
 
 -(void) countNeighbors {
 
+  NSLog(@"I made it to Count Neighbors");
         // iterate through the rows
         // note that NSArray has a method 'count' that will return the number of elements in the array
     for (int i = 0; i < [_gridArray count]; i++)
@@ -163,12 +164,12 @@ static const int GRID_COLUMNS = 10;
             if (j == 3) {
                 _creature.isAlive = YES;
                 numAlive ++;
-                    NSLog(@"I made it to Yes");
+
             } else {
                 if ([_gridArray count] <= 1 || [_gridArray count] >= 4) {
                     _creature.isAlive = NO;
                     _creature.visible = NO;
-                    NSLog(@"I made it to No");
+
                 }
             }
         }
