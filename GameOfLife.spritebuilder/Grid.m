@@ -165,10 +165,14 @@ static const int GRID_COLUMNS = 10;
                 _creature.isAlive = YES;
                 numAlive ++;
 
+                if ([_gridArray objectAtIndex:4]) {
+                    _creature.visible = NO;
+                }
+
             } else {
                 if ([_gridArray count] <= 1 || [_gridArray count] >= 4) {
                     _creature.isAlive = NO;
-                    _creature.visible = NO;
+
 
                 }
             }
