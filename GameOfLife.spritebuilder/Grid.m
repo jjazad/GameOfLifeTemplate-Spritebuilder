@@ -162,7 +162,7 @@ static const int GRID_COLUMNS = 10;
     
     for (int i = 0; i < [_gridArray count]; i ++) {
         for (int j = 0; j < i; j ++) {
-            if (j == 3) {
+            if (i == 3) {
                       _creature.isAlive = YES;
 
                 numAlive ++;
