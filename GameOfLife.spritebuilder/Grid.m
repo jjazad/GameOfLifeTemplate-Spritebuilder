@@ -160,8 +160,9 @@ static const int GRID_COLUMNS = 10;
 
     Creature *_creature;
     
-    for (int i = 0; i < [_gridArray count]; i ++) {
-        for (int j = 0; j < i; j ++) {
+    for (int i = 0; i < [_gridArray count]; i ++)
+    {
+        for (int j = 0; j < [_gridArray[i]count]; j ++) {
             if (i == 3) {
                       _creature.isAlive = YES;
 
